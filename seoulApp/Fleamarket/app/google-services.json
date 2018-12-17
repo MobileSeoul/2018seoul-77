@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "90044369020",
+    "firebase_url": "https://fleamarket-2efcc.firebaseio.com",
+    "project_id": "fleamarket-2efcc",
+    "storage_bucket": "fleamarket-2efcc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:90044369020:android:02a14bf565001b9b",
+        "android_client_info": {
+          "package_name": "com.example.skuniv.fleamarket2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "90044369020-nvu9vupbchfdieagdtl608idtl5lm39c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0-QUJwDv9ySn4PHd1NSBx7v6FfMFa_B4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string-array name="noticeType">
+            <item >제목</item>
+            <item >내용</item>
+            <item >제목 + 내용</item>
+        </string-array>
+
+    <string-array name="cloth">
+        <item>신발</item>
+        <item>상의</item>
+        <item>하의</item>
+        <item>모자</item>
+        <item>장갑</item>
+    </string-array>
+
+    <string-array name="digital">
+        <item>PC</item>
+        <item>모바일</item>
+        <item >가전</item>
+        <item >차량용품</item>
+        <item>게임</item>
+        <item>오디오</item>
+    </string-array>
+
+    <string-array name="fancy">
+        <item >공책</item>
+        <item >필기구</item>
+        <item >미술용품</item>
+        <item>장난감</item>
+    </string-array>
+
+    <string-array name="acc">
+        <item >반지</item>
+        <item >귀걸이</item>
+        <item >목걸이</item>
+        <item>팔찌</item>
+        <item>시계</item>
+        <item>지갑</item>
+        <item>가방</item>
+    </string-array>
+
+    <string-array name="book">
+        <item >소설</item>
+        <item >수필</item>
+        <item >만화</item>
+        <item>자서전</item>
+        <item>잡지</item>
+        <item>시</item>
+    </string-array>
+
+    <string-array name="etc">
+        <item >향수</item>
+        <item >향초</item>
+        <item >화장품</item>
+        <item>네일</item>
+        <item>헤어</item>
+        <item>악기</item>
+    </string-array>
+</resources>

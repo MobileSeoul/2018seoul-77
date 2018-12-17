@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="shop"
+            type="com.example.skuniv.fleamarket2.viewModel.AdminSellerViewModel.SellerShopViewModel"/>
+
+    </data>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.sellerView.SellerGoodsList"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/addBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:background="#F8BBD0"
+            android:layout_margin="8dp"
+            android:text="상품 추가"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:items="@{shop.goods}">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
+</layout>

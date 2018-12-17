@@ -1,0 +1,1839 @@
+2018-09-14 11:40:45,951 INFO: cloth category
+2018-09-14 11:42:21,502 INFO: cloth category
+2018-09-14 11:42:21,503 INFO: <rest_framework.request.Request object at 0x000001BF606DBE48>
+2018-09-14 11:44:53,863 INFO: cloth category
+2018-09-14 11:44:53,901 ERROR: Internal Server Error: /category/cloth/7
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\category\views.py", line 41, in get_cloth
+    logger.info(json.dumps(request))
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Request is not JSON serializable
+2018-09-14 11:47:27,013 INFO: cloth category
+2018-09-14 11:47:27,026 INFO: mongod db
+2018-09-14 11:47:27,027 INFO: change shops
+2018-09-20 20:41:05,902 INFO: cloth category
+2018-09-20 20:41:05,917 INFO: mongod db
+2018-09-20 20:41:05,918 INFO: change shops
+2018-09-20 21:10:47,623 ERROR: Internal Server Error: /location/section/a/1
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\location\views.py", line 45, in section_a
+    return get_location_shop(SECTION_A,list_num)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\location\views.py", line 39, in get_location_shop
+    print(meta['count'])
+TypeError: 'CommandCursor' object is not subscriptable
+2018-09-20 21:15:42,894 WARNING: Not Found: /favicon.ico
+2018-09-20 21:17:03,414 ERROR: Internal Server Error: /location/section/a/1
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\location\views.py", line 48, in section_a
+    return get_location_shop(SECTION_A,list_num)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\location\views.py", line 37, in get_location_shop
+    {"$project":{"_id":0}}
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+2018-09-20 21:30:13,789 INFO: cloth category
+2018-09-20 21:30:13,793 INFO: mongod db
+2018-09-20 21:30:13,794 INFO: change shops
+2018-09-20 21:32:36,566 INFO: cloth category
+2018-09-20 21:32:36,574 INFO: mongod db
+2018-09-20 21:32:36,576 INFO: change shops
+2018-09-20 21:32:42,993 INFO: cloth category
+2018-09-20 21:32:42,998 INFO: mongod db
+2018-09-20 21:32:42,999 INFO: change shops
+2018-09-20 21:33:23,303 INFO: cloth category
+2018-09-20 21:33:23,307 INFO: mongod db
+2018-09-20 21:33:23,308 INFO: change shops
+2018-09-20 21:33:37,337 INFO: cloth category
+2018-09-20 21:33:37,343 INFO: mongod db
+2018-09-20 21:33:37,343 INFO: change shops
+2018-09-20 21:33:59,851 INFO: cloth category
+2018-09-20 21:33:59,857 INFO: mongod db
+2018-09-20 21:33:59,857 INFO: change shops
+2018-09-20 22:41:40,716 ERROR: Internal Server Error: /notice/select/1
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\notice\views.py", line 36, in get_notice
+    ,{"$project":{"_id":0}}
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\collection.py", line 2185, in aggregate
+    **kwargs)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\collection.py", line 2092, in _aggregate
+    client=self.__database.client)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\pool.py", line 517, in command
+    collation=collation)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\network.py", line 125, in command
+    parse_write_concern_error=parse_write_concern_error)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\helpers.py", line 145, in _check_command_response
+    raise OperationFailure(msg % errmsg, code, response)
+pymongo.errors.OperationFailure: a group specification must include an _id
+2018-09-24 14:42:48,841 WARNING: Not Found: /notice/search/title/
+2018-09-24 14:49:14,772 WARNING: Not Found: /notice/search/rk/D
+2018-09-24 14:52:32,958 ERROR: Internal Server Error: /notice/search/rk/D/1
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\notice\views.py", line 62, in search
+    , {"$limit": 10}
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\collection.py", line 2185, in aggregate
+    **kwargs)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\collection.py", line 2092, in _aggregate
+    client=self.__database.client)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\pool.py", line 517, in command
+    collation=collation)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\network.py", line 125, in command
+    parse_write_concern_error=parse_write_concern_error)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\helpers.py", line 145, in _check_command_response
+    raise OperationFailure(msg % errmsg, code, response)
+pymongo.errors.OperationFailure: $match with $text is only allowed as the first pipeline stage
+2018-09-24 15:14:35,232 ERROR: Internal Server Error: /notice/search/title/1/1
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\notice\views.py", line 80, in search
+    , {"$limit": 10}
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\collection.py", line 2185, in aggregate
+    **kwargs)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\collection.py", line 2092, in _aggregate
+    client=self.__database.client)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\pool.py", line 517, in command
+    collation=collation)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\network.py", line 125, in command
+    parse_write_concern_error=parse_write_concern_error)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\helpers.py", line 145, in _check_command_response
+    raise OperationFailure(msg % errmsg, code, response)
+pymongo.errors.OperationFailure: Unrecognized pipeline stage name: '$or'
+2018-09-24 15:17:10,711 ERROR: Internal Server Error: /notice/search/title/1/1
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\notice\views.py", line 81, in search
+    , {"$limit": 10}
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\collection.py", line 2185, in aggregate
+    **kwargs)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\collection.py", line 2092, in _aggregate
+    client=self.__database.client)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\pool.py", line 517, in command
+    collation=collation)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\network.py", line 125, in command
+    parse_write_concern_error=parse_write_concern_error)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\helpers.py", line 145, in _check_command_response
+    raise OperationFailure(msg % errmsg, code, response)
+pymongo.errors.OperationFailure: Unrecognized expression '$match'
+2018-09-24 15:17:34,211 ERROR: Internal Server Error: /notice/search/title/1/1
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\notice\views.py", line 81, in search
+    , {"$limit": 10}
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\collection.py", line 2185, in aggregate
+    **kwargs)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\collection.py", line 2092, in _aggregate
+    client=self.__database.client)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\pool.py", line 517, in command
+    collation=collation)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\network.py", line 125, in command
+    parse_write_concern_error=parse_write_concern_error)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\helpers.py", line 145, in _check_command_response
+    raise OperationFailure(msg % errmsg, code, response)
+pymongo.errors.OperationFailure: Unrecognized expression '$match'
+2018-09-24 15:18:02,903 ERROR: Internal Server Error: /notice/search/title/1/1
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\notice\views.py", line 81, in search
+    , {"$limit": 10}
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\collection.py", line 2185, in aggregate
+    **kwargs)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\collection.py", line 2092, in _aggregate
+    client=self.__database.client)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\pool.py", line 517, in command
+    collation=collation)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\network.py", line 125, in command
+    parse_write_concern_error=parse_write_concern_error)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\helpers.py", line 145, in _check_command_response
+    raise OperationFailure(msg % errmsg, code, response)
+pymongo.errors.OperationFailure: Unrecognized expression '$match'
+2018-09-24 15:18:20,913 ERROR: Internal Server Error: /notice/search/title/1/1
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\notice\views.py", line 81, in search
+    , {"$limit": 10}
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\collection.py", line 2185, in aggregate
+    **kwargs)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\collection.py", line 2092, in _aggregate
+    client=self.__database.client)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\pool.py", line 517, in command
+    collation=collation)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\network.py", line 125, in command
+    parse_write_concern_error=parse_write_concern_error)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\helpers.py", line 145, in _check_command_response
+    raise OperationFailure(msg % errmsg, code, response)
+pymongo.errors.OperationFailure: Unrecognized expression '$match'
+2018-09-24 15:54:50,690 WARNING: Not Found: /caegory/1/1
+2018-09-24 15:55:25,024 WARNING: Not Found: /caegory/1/1
+2018-09-24 15:55:30,419 ERROR: Internal Server Error: /category/1/1
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\category\views.py", line 52, in get_category
+    return select_categorynum(category_num,list_num)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\category\views.py", line 22, in select_categorynum
+    ,{"$limit":10}
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\collection.py", line 2185, in aggregate
+    **kwargs)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\collection.py", line 2092, in _aggregate
+    client=self.__database.client)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\pool.py", line 517, in command
+    collation=collation)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\network.py", line 125, in command
+    parse_write_concern_error=parse_write_concern_error)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\helpers.py", line 145, in _check_command_response
+    raise OperationFailure(msg % errmsg, code, response)
+pymongo.errors.OperationFailure: unknown top level operator: $in
+2018-09-24 15:59:50,045 ERROR: Internal Server Error: /category/1/1
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\category\views.py", line 52, in get_category
+    return select_categorynum(category_num,list_num)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\category\views.py", line 22, in select_categorynum
+    ,{"$limit":10}
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\collection.py", line 2185, in aggregate
+    **kwargs)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\collection.py", line 2092, in _aggregate
+    client=self.__database.client)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\pool.py", line 517, in command
+    collation=collation)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\network.py", line 125, in command
+    parse_write_concern_error=parse_write_concern_error)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\helpers.py", line 145, in _check_command_response
+    raise OperationFailure(msg % errmsg, code, response)
+pymongo.errors.OperationFailure: $in requires an array as a second argument, found: missing
+2018-09-24 16:00:12,027 ERROR: Internal Server Error: /category/1/1
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\category\views.py", line 52, in get_category
+    return select_categorynum(category_num,list_num)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\category\views.py", line 22, in select_categorynum
+    ,{"$limit":10}
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\collection.py", line 2185, in aggregate
+    **kwargs)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\collection.py", line 2092, in _aggregate
+    client=self.__database.client)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\pool.py", line 517, in command
+    collation=collation)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\network.py", line 125, in command
+    parse_write_concern_error=parse_write_concern_error)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\helpers.py", line 145, in _check_command_response
+    raise OperationFailure(msg % errmsg, code, response)
+pymongo.errors.OperationFailure: $in requires an array as a second argument, found: missing
+2018-09-24 16:00:48,911 INFO: mongod db
+2018-09-24 16:00:48,911 INFO: change shops
+2018-09-24 16:01:45,601 INFO: mongod db
+2018-09-24 16:01:45,602 INFO: change shops
+2018-09-24 16:01:55,504 INFO: mongod db
+2018-09-24 16:01:55,505 INFO: change shops
+2018-09-24 16:02:01,698 INFO: mongod db
+2018-09-24 16:02:01,699 INFO: change shops
+2018-09-24 19:19:24,172 INFO: mongod db
+2018-09-24 19:19:24,172 INFO: change shops
+2018-09-24 19:20:21,329 INFO: mongod db
+2018-09-24 19:20:21,332 INFO: change shops
+2018-09-24 19:20:27,867 INFO: mongod db
+2018-09-24 19:20:27,899 ERROR: Internal Server Error: /category/11/1
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\category\views.py", line 53, in get_category
+    return select_categorynum(category_num,list_num)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\category\views.py", line 47, in select_categorynum
+    data['meta'] = meta[0]
+IndexError: list index out of range
+2018-09-24 19:21:30,212 INFO: mongod db
+2018-09-24 19:21:30,212 INFO: change shops
+2018-09-24 19:22:27,751 INFO: mongod db
+2018-09-24 19:22:27,752 INFO: change shops
+2018-09-24 19:56:50,262 WARNING: Not Found: /notice/search/1/1
+2018-09-25 05:21:35,949 ERROR: Internal Server Error: /user/signup
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 485, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 400, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+2018-09-25 05:22:02,964 ERROR: Internal Server Error: /user/signup
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 485, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 400, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+2018-09-25 05:40:08,964 ERROR: Internal Server Error: /user/signup
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\user\views.py", line 16, in signup
+    print(BCryptPasswordHasher.encode(json_body['pw']))
+TypeError: encode() missing 2 required positional arguments: 'password' and 'salt'
+2018-09-25 05:42:26,840 ERROR: Internal Server Error: /user/signup
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\user\views.py", line 16, in signup
+    print(BCryptPasswordHasher.algorithm.encode(json_body['pw']))
+LookupError: unknown encoding: c2619zz
+2018-09-25 05:46:15,611 ERROR: Internal Server Error: /user/signup
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\user\views.py", line 16, in signup
+    hashed = bcrypt.hashpw(json_body['pw'], bcrypt.gensalt())
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\bcrypt\__init__.py", line 62, in hashpw
+    raise TypeError("Unicode-objects must be encoded before hashing")
+TypeError: Unicode-objects must be encoded before hashing
+2018-09-25 05:49:20,230 ERROR: Internal Server Error: /user/signup
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\user\views.py", line 17, in signup
+    print(bcrypt.checkpw(json_body['pw'],hashed_password))
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\bcrypt\__init__.py", line 101, in checkpw
+    raise TypeError("Unicode-objects must be encoded before checking")
+TypeError: Unicode-objects must be encoded before checking
+2018-09-25 05:56:28,689 ERROR: Internal Server Error: /user/signin
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\user\views.py", line 38, in signin
+    print(bcrypt.checkpw(user['pw'],hashed_password))
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\bcrypt\__init__.py", line 101, in checkpw
+    raise TypeError("Unicode-objects must be encoded before checking")
+TypeError: Unicode-objects must be encoded before checking
+2018-09-25 05:56:45,779 ERROR: Internal Server Error: /user/signin
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\user\views.py", line 38, in signin
+    print(bcrypt.checkpw(user['pw'],hashed_password))
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\bcrypt\__init__.py", line 101, in checkpw
+    raise TypeError("Unicode-objects must be encoded before checking")
+TypeError: Unicode-objects must be encoded before checking
+2018-09-25 05:57:59,495 ERROR: Internal Server Error: /user/signin
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\user\views.py", line 38, in signin
+    print(bcrypt.checkpw(user['pw'].encode('utf-8'),hashed_password))
+AttributeError: 'bytes' object has no attribute 'encode'
+2018-09-25 06:00:09,704 ERROR: Internal Server Error: /user/signin
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\user\views.py", line 38, in signin
+    print(bcrypt.checkpw(user['pw'],hashed_password.encode('utf-8')))
+AttributeError: 'bytes' object has no attribute 'encode'
+2018-09-25 06:02:48,863 ERROR: Internal Server Error: /user/signin
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\user\views.py", line 39, in signin
+    print(bcrypt.checkpw(json_body['pw'],user['pw']))
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\bcrypt\__init__.py", line 101, in checkpw
+    raise TypeError("Unicode-objects must be encoded before checking")
+TypeError: Unicode-objects must be encoded before checking
+2018-09-25 06:05:29,189 ERROR: Internal Server Error: /user/signin
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 154, in _get_response
+    response = response.render()
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\response.py", line 72, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\renderers.py", line 105, in render
+    allow_nan=not self.strict, separators=separators
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\utils\json.py", line 28, in dumps
+    return json.dumps(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\utils\encoders.py", line 68, in default
+    return super(JSONEncoder, self).default(obj)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ObjectId is not JSON serializable
+2018-09-25 06:07:14,209 ERROR: Internal Server Error: /user/signin
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\user\views.py", line 42, in signin
+    return Response(json.dumps(user))
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ObjectId is not JSON serializable
+2018-09-25 06:08:21,523 ERROR: Internal Server Error: /user/signin
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\user\views.py", line 48, in signin
+    return Response(json.dumps(user))
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bytes is not JSON serializable
+2018-09-25 06:09:32,920 ERROR: Internal Server Error: /user/signin
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\user\views.py", line 49, in signin
+    return Response(json.dumps(user))
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bytes is not JSON serializable
+2018-09-25 06:10:13,252 ERROR: Internal Server Error: /user/signin
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\user\views.py", line 50, in signin
+    return Response(json.dumps(user))
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bytes is not JSON serializable
+2018-09-25 22:20:36,595 ERROR: Internal Server Error: /seller/insert/goods
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\contextlib.py", line 73, in inner
+    with self._recreate_cm():
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\transaction.py", line 147, in __enter__
+    if not connection.get_autocommit():
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\backends\base\base.py", line 378, in get_autocommit
+    self.ensure_connection()
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\backends\dummy\base.py", line 20, in complain
+    raise ImproperlyConfigured("settings.DATABASES is improperly configured. "
+django.core.exceptions.ImproperlyConfigured: settings.DATABASES is improperly configured. Please supply the ENGINE value. Check settings documentation for more details.
+2018-09-25 22:21:27,115 ERROR: Internal Server Error: /seller/insert/goods
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\contextlib.py", line 73, in inner
+    with self._recreate_cm():
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\transaction.py", line 147, in __enter__
+    if not connection.get_autocommit():
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\backends\base\base.py", line 378, in get_autocommit
+    self.ensure_connection()
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\backends\dummy\base.py", line 20, in complain
+    raise ImproperlyConfigured("settings.DATABASES is improperly configured. "
+django.core.exceptions.ImproperlyConfigured: settings.DATABASES is improperly configured. Please supply the ENGINE value. Check settings documentation for more details.
+2018-09-25 22:23:43,271 ERROR: Internal Server Error: /seller/insert/goods
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\contextlib.py", line 73, in inner
+    with self._recreate_cm():
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\transaction.py", line 147, in __enter__
+    if not connection.get_autocommit():
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\backends\base\base.py", line 378, in get_autocommit
+    self.ensure_connection()
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\backends\dummy\base.py", line 20, in complain
+    raise ImproperlyConfigured("settings.DATABASES is improperly configured. "
+django.core.exceptions.ImproperlyConfigured: settings.DATABASES is improperly configured. Please supply the ENGINE value. Check settings documentation for more details.
+2018-09-25 22:26:46,046 ERROR: Internal Server Error: /seller/apply
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 154, in _get_response
+    response = response.render()
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\response.py", line 72, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\renderers.py", line 105, in render
+    allow_nan=not self.strict, separators=separators
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\utils\json.py", line 28, in dumps
+    return json.dumps(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\utils\encoders.py", line 68, in default
+    return super(JSONEncoder, self).default(obj)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ObjectId is not JSON serializable
+2018-09-25 22:27:28,334 ERROR: Internal Server Error: /seller/apply
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 154, in _get_response
+    response = response.render()
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\response.py", line 72, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\renderers.py", line 105, in render
+    allow_nan=not self.strict, separators=separators
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\utils\json.py", line 28, in dumps
+    return json.dumps(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\utils\encoders.py", line 68, in default
+    return super(JSONEncoder, self).default(obj)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ObjectId is not JSON serializable
+2018-09-25 23:01:14,085 ERROR: Internal Server Error: /apply/select/1
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\admin\views.py", line 33, in get_apply
+    return select_all_apply(list_num)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\admin\views.py", line 25, in select_all_apply
+    .limit(10)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\cursor.py", line 1169, in next
+    if len(self.__data) or self._refresh():
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\cursor.py", line 1085, in _refresh
+    self.__send_message(q)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\cursor.py", line 975, in __send_message
+    helpers._check_command_response(first)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\helpers.py", line 145, in _check_command_response
+    raise OperationFailure(msg % errmsg, code, response)
+pymongo.errors.OperationFailure: Unsupported projection option: date: { $dateToString: { format: "%Y-%m-%d", date: "$date" } }
+2018-09-25 23:30:04,492 ERROR: Internal Server Error: /apply/select/1
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\admin\views.py", line 36, in get_apply
+    return Response(select_all_apply(list_num))
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\admin\views.py", line 31, in select_all_apply
+    data['meta'] = {'count':len(applies)}
+TypeError: object of type 'CommandCursor' has no len()
+2018-09-25 23:32:07,820 ERROR: Internal Server Error: /apply/select/1
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\admin\views.py", line 38, in get_apply
+    return Response(select_all_apply(list_num))
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\admin\views.py", line 31, in select_all_apply
+    print(json.dumps(applies))
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type CommandCursor is not JSON serializable
+2018-09-25 23:38:55,177 ERROR: Internal Server Error: /apply/firstcome/10/1
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\admin\views.py", line 64, in firstcome_assignment
+    return select_all_apply(list_num)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\admin\views.py", line 29, in select_all_apply
+    , {"$limit": 10}
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\collection.py", line 2185, in aggregate
+    **kwargs)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\collection.py", line 2092, in _aggregate
+    client=self.__database.client)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\pool.py", line 517, in command
+    collation=collation)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\network.py", line 125, in command
+    parse_write_concern_error=parse_write_concern_error)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\helpers.py", line 145, in _check_command_response
+    raise OperationFailure(msg % errmsg, code, response)
+pymongo.errors.OperationFailure: can't convert from BSON type string to Date
+2018-09-25 23:39:45,391 ERROR: Internal Server Error: /apply/firstcome/10/1
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\admin\views.py", line 64, in firstcome_assignment
+    return select_all_apply(list_num)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\admin\views.py", line 29, in select_all_apply
+    , {"$limit": 10}
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\collection.py", line 2185, in aggregate
+    **kwargs)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\collection.py", line 2092, in _aggregate
+    client=self.__database.client)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\pool.py", line 517, in command
+    collation=collation)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\network.py", line 125, in command
+    parse_write_concern_error=parse_write_concern_error)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\helpers.py", line 145, in _check_command_response
+    raise OperationFailure(msg % errmsg, code, response)
+pymongo.errors.OperationFailure: can't convert from BSON type string to Date
+2018-09-25 23:40:28,427 ERROR: Internal Server Error: /apply/firstcome/10/1
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\admin\views.py", line 65, in firstcome_assignment
+    return select_all_apply(list_num)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\admin\views.py", line 29, in select_all_apply
+    , {"$limit": 10}
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\collection.py", line 2185, in aggregate
+    **kwargs)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\collection.py", line 2092, in _aggregate
+    client=self.__database.client)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\pool.py", line 517, in command
+    collation=collation)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\network.py", line 125, in command
+    parse_write_concern_error=parse_write_concern_error)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\helpers.py", line 145, in _check_command_response
+    raise OperationFailure(msg % errmsg, code, response)
+pymongo.errors.OperationFailure: can't convert from BSON type string to Date
+2018-09-25 23:41:38,068 ERROR: Internal Server Error: /apply/firstcome/10/1
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\admin\views.py", line 59, in firstcome_assignment
+    , {"$sort": {"date": -1}}
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\collection.py", line 2185, in aggregate
+    **kwargs)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\collection.py", line 2092, in _aggregate
+    client=self.__database.client)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\pool.py", line 517, in command
+    collation=collation)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\network.py", line 125, in command
+    parse_write_concern_error=parse_write_concern_error)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\helpers.py", line 145, in _check_command_response
+    raise OperationFailure(msg % errmsg, code, response)
+pymongo.errors.OperationFailure: can't convert from BSON type string to Date
+2018-09-25 23:43:58,451 ERROR: Internal Server Error: /apply/firstcome/10/1
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 485, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 400, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'dict'>`
+2018-09-25 23:47:35,595 ERROR: Internal Server Error: /apply/firstcome/1/1
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\admin\views.py", line 65, in firstcome_assignment
+    apply_collection.save(applies)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\collection.py", line 2908, in save
+    common.validate_is_document_type("to_save", to_save)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\common.py", line 434, in validate_is_document_type
+    "collections.MutableMapping" % (option,))
+TypeError: to_save must be an instance of dict, bson.son.SON, bson.raw_bson.RawBSONDocument, or a type that inherits from collections.MutableMapping
+2018-09-25 23:47:51,236 ERROR: Internal Server Error: /apply/firstcome/1/1
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\admin\views.py", line 69, in firstcome_assignment
+    return  Response(select_all_apply(list_num))
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\admin\views.py", line 29, in select_all_apply
+    , {"$limit": 10}
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\collection.py", line 2185, in aggregate
+    **kwargs)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\collection.py", line 2092, in _aggregate
+    client=self.__database.client)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\pool.py", line 517, in command
+    collation=collation)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\network.py", line 125, in command
+    parse_write_concern_error=parse_write_concern_error)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\helpers.py", line 145, in _check_command_response
+    raise OperationFailure(msg % errmsg, code, response)
+pymongo.errors.OperationFailure: can't convert from BSON type string to Date
+2018-09-25 23:53:12,892 ERROR: Internal Server Error: /apply/firstcome/1/1
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\admin\views.py", line 67, in firstcome_assignment
+    return  Response(select_all_apply(list_num))
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\admin\views.py", line 29, in select_all_apply
+    , {"$limit": 10}
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\collection.py", line 2185, in aggregate
+    **kwargs)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\collection.py", line 2092, in _aggregate
+    client=self.__database.client)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\pool.py", line 517, in command
+    collation=collation)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\network.py", line 125, in command
+    parse_write_concern_error=parse_write_concern_error)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\helpers.py", line 145, in _check_command_response
+    raise OperationFailure(msg % errmsg, code, response)
+pymongo.errors.OperationFailure: can't convert from BSON type string to Date
+2018-09-25 23:54:59,813 ERROR: Internal Server Error: /apply/firstcome/1/1
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\admin\views.py", line 65, in firstcome_assignment
+    apply_collection.update(apply)
+TypeError: update() missing 1 required positional argument: 'document'
+2018-09-26 00:04:30,494 ERROR: Internal Server Error: /apply/firstcome/0/1
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\admin\views.py", line 59, in firstcome_assignment
+    , {"$limit": count}
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\collection.py", line 2185, in aggregate
+    **kwargs)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\collection.py", line 2092, in _aggregate
+    client=self.__database.client)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\pool.py", line 517, in command
+    collation=collation)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\network.py", line 125, in command
+    parse_write_concern_error=parse_write_concern_error)
+  File "C:\Users\c2619\AppData\Roaming\Python\Python37\site-packages\pymongo\helpers.py", line 145, in _check_command_response
+    raise OperationFailure(msg % errmsg, code, response)
+pymongo.errors.OperationFailure: the limit must be positive
+2018-09-26 14:32:05,261 WARNING: Method Not Allowed: /seller/select/A01
+2018-09-26 14:32:10,144 INFO: get_goods
+2018-09-26 14:51:30,367 INFO: apply
+2018-09-26 14:51:30,368 INFO: request body -> {'id': '6', 'name': '6김영', 'title': '아기 의류 위주의 상품을 나누고 싶습니다.', 'contents': '이번에 5살된 아기가 있는 집입니다. 애기가 하루하루 몰라보게 성장을 하며 맞지 않게 된 옷을 나누고 싶어 지원하게 되었습니다.'}
+2018-09-26 14:51:30,410 ERROR: Internal Server Error: /seller/apply
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\seller\views.py", line 57, in apply
+    with transaction.atomic():
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\transaction.py", line 147, in __enter__
+    if not connection.get_autocommit():
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\backends\base\base.py", line 378, in get_autocommit
+    self.ensure_connection()
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\backends\dummy\base.py", line 20, in complain
+    raise ImproperlyConfigured("settings.DATABASES is improperly configured. "
+django.core.exceptions.ImproperlyConfigured: settings.DATABASES is improperly configured. Please supply the ENGINE value. Check settings documentation for more details.
+2018-09-26 14:57:04,199 INFO: apply
+2018-09-26 14:57:04,200 INFO: request body -> {'id': '6', 'name': '6김영', 'title': '아기 의류 위주의 상품을 나누고 싶습니다.', 'contents': '이번에 5살된 아기가 있는 집입니다. 애기가 하루하루 몰라보게 성장을 하며 맞지 않게 된 옷을 나누고 싶어 지원하게 되었습니다.'}
+2018-09-26 14:57:04,227 ERROR: Internal Server Error: /seller/apply
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\seller\views.py", line 57, in apply
+    with transaction.atomic():
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\transaction.py", line 147, in __enter__
+    if not connection.get_autocommit():
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\backends\base\base.py", line 378, in get_autocommit
+    self.ensure_connection()
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\db\backends\dummy\base.py", line 20, in complain
+    raise ImproperlyConfigured("settings.DATABASES is improperly configured. "
+django.core.exceptions.ImproperlyConfigured: settings.DATABASES is improperly configured. Please supply the ENGINE value. Check settings documentation for more details.
+2018-09-26 16:25:17,112 INFO: signup
+2018-09-26 16:25:17,113 INFO: request body -> {'id': '2', 'pw': '2', 'name': '123', 'sex': 'male', 'email': 'asdf@asdf.com'}
+2018-09-26 16:25:18,328 INFO: 기존에 없는 id
+2018-09-26 16:47:53,657 WARNING: Bad Request: /user/upload
+2018-09-26 16:48:59,158 WARNING: Bad Request: /user/upload
+2018-09-26 16:49:42,560 WARNING: Bad Request: /user/upload
+2018-09-26 16:50:05,651 ERROR: Internal Server Error: /user/upload
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\user\views.py", line 94, in upload_file
+    print(json.dumps(request))
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Request is not JSON serializable
+2018-09-26 16:50:54,047 ERROR: Internal Server Error: /user/upload
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\utils\datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'file'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\user\views.py", line 94, in upload_file
+    file = request.FILES['file']
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\utils\datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'file'
+2018-09-26 16:51:40,043 ERROR: Internal Server Error: /user/upload
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\utils\datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'file'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\user\views.py", line 94, in upload_file
+    file = request.FILES['file']
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\utils\datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'file'
+2018-09-26 16:58:27,918 ERROR: Internal Server Error: /user/upload
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\user\views.py", line 97, in upload_file
+    destination = open('/home/tanas/' + image_uploaded.name, "wb+")
+FileNotFoundError: [Errno 2] No such file or directory: '/home/tanas/KakaoTalk_20180910_202559477.jpg'
+2018-09-26 16:58:58,871 ERROR: Internal Server Error: /user/upload
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\user\views.py", line 97, in upload_file
+    destination = open('/static/bazaar_img/a' + image_uploaded.name, "wb+")
+FileNotFoundError: [Errno 2] No such file or directory: '/static/bazaar_img/aKakaoTalk_20180910_202559477.jpg'
+2018-09-26 18:44:31,094 ERROR: Internal Server Error: /user/upload
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\utils\datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'image_uploaded'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\user\views.py", line 95, in upload_file
+    image_uploaded = request.FILES["image_uploaded"]
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\utils\datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'image_uploaded'
+2018-09-26 18:59:22,758 ERROR: Internal Server Error: /user/upload
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\user\views.py", line 95, in upload_file
+    json_body = json.loads(request.body.decode("utf-8"))
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xff in position 146: invalid start byte
+2018-09-26 18:59:43,700 ERROR: Internal Server Error: /user/upload
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\user\views.py", line 95, in upload_file
+    json_body = json.loads(request.body)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\json\__init__.py", line 343, in loads
+    s = s.decode(detect_encoding(s), 'surrogatepass')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xff in position 146: invalid start byte
+2018-09-26 19:01:44,734 ERROR: Internal Server Error: /user/upload
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\user\views.py", line 95, in upload_file
+    json_body = json.loads(request.POST.decode("utf-8"))
+AttributeError: 'QueryDict' object has no attribute 'decode'
+2018-09-26 19:02:52,079 ERROR: Internal Server Error: /user/upload
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\user\views.py", line 95, in upload_file
+    json_body = json.loads(request.POST.dict().decode("utf-8"))
+AttributeError: 'dict' object has no attribute 'decode'
+2018-09-26 19:03:29,775 ERROR: Internal Server Error: /user/upload
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\user\views.py", line 96, in upload_file
+    # json_body = json.loads(request.POST.dict().decode("utf-8"))
+AttributeError: 'dict' object has no attribute 'decode'
+2018-09-26 19:11:03,360 INFO: insert_goods
+2018-09-26 19:11:03,360 INFO: request body -> {'location': 'a', 'shop': 'A01', 'name': '건영', 'price': '5000000', 'quantity': '1', 'category': '1'}
+2018-09-26 19:11:31,646 INFO: insert_goods
+2018-09-26 19:11:31,646 INFO: request body -> {'location': 'a', 'shop': 'A01', 'name': '건영', 'price': '5000000', 'quantity': '1', 'category': '1'}
+2018-09-26 19:11:53,869 INFO: insert_goods
+2018-09-26 19:11:53,869 INFO: request body -> {'location': 'a', 'shop': 'A01', 'name': '건영', 'price': '5000000', 'quantity': '1', 'category': '1'}
+2018-09-26 19:12:45,276 INFO: insert_goods
+2018-09-26 19:12:45,277 INFO: request body -> {'location': 'a', 'shop': 'A01', 'name': '건영', 'price': '5000000', 'quantity': '1', 'category': '1'}
+2018-09-26 19:13:06,216 INFO: insert_goods
+2018-09-26 19:13:06,217 INFO: request body -> {'location': 'a', 'shop': 'A01', 'name': '건영', 'price': '5000000', 'quantity': '1', 'category': '1'}
+2018-09-26 19:13:31,847 INFO: insert_goods
+2018-09-26 19:13:31,847 INFO: request body -> {'location': 'a', 'shop': 'A01', 'name': '건영', 'price': '5000000', 'quantity': '1', 'category': '1'}
+2018-09-26 19:15:25,454 INFO: insert_goods
+2018-09-26 19:15:25,455 INFO: request body -> {'location': 'a', 'shop': 'A01', 'name': '건영', 'price': '5000000', 'quantity': '1', 'category': '1'}
+2018-09-26 19:18:43,885 INFO: insert_goods
+2018-09-26 19:18:43,886 INFO: request body -> {'location': 'a', 'shop': 'A01', 'name': '건영', 'price': '5000000', 'quantity': '1', 'category': '2'}
+2018-09-26 19:19:11,220 INFO: insert_goods
+2018-09-26 19:19:11,220 INFO: request body -> {'location': 'a', 'shop': 'A01', 'name': '건영', 'price': '5000000', 'quantity': '1', 'category[]': '2'}
+2018-09-26 19:20:21,628 INFO: insert_goods
+2018-09-26 19:20:21,628 INFO: request body -> {'location': 'a', 'shop': 'A01', 'name': '건영', 'price': '5000000', 'quantity': '1', 'category[0]': '1', 'category[1]': '2'}
+2018-09-26 19:21:03,258 INFO: insert_goods
+2018-09-26 19:21:12,730 INFO: insert_goods
+2018-09-26 19:27:07,024 INFO: insert_goods
+2018-09-26 19:27:07,025 INFO: request body -> {'location': 'a', 'shop': 'A01', 'name': '건영', 'price': '5000000', 'quantity': '1', 'category': '[0,1]'}
+2018-09-26 19:28:09,862 INFO: insert_goods
+2018-09-26 19:28:09,863 INFO: request body -> {'location': 'a', 'shop': 'A01', 'name': '건영', 'price': '5000000', 'quantity': '1', 'category': '[0,1]'}
+2018-09-26 19:28:46,579 INFO: insert_goods
+2018-09-26 19:28:46,579 INFO: request body -> {'location': 'a', 'shop': 'A01', 'name': '건영', 'price': '5000000', 'quantity': '1', 'category': '[0,1]'}
+2018-09-26 19:32:44,318 INFO: insert_goods
+2018-09-26 19:32:44,318 INFO: request body -> {'location': 'a', 'shop': 'A01', 'name': '건영', 'price': '5000000', 'quantity': '1', 'category': [0, 1]}
+2018-09-27 01:50:04,374 INFO: insert_goods
+2018-09-27 01:50:04,375 INFO: request body -> {'location': 'a', 'shop': 'A01', 'name': '건영', 'price': '5000000', 'quantity': '1', 'category': [1, 11]}
+2018-09-27 01:54:01,198 INFO: insert_goods
+2018-09-27 01:54:01,198 INFO: request body -> {'location': 'a', 'shop': 'A01', 'name': '건영', 'price': '5000000', 'quantity': '1', 'category': [1, 11]}
+2018-09-27 01:54:47,703 WARNING: Not Found: /favicon.ico
+2018-09-27 01:55:39,484 INFO: insert_goods
+2018-09-27 01:55:39,486 INFO: request body -> {'location': 'a', 'shop': 'A01', 'name': '건영', 'price': '5000000', 'quantity': '1', 'category': [1, 11]}
+2018-09-28 01:43:05,510 ERROR: Internal Server Error: /send/admission
+Traceback (most recent call last):
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\c2619\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\c2619\Desktop\gunyoungkim\BazaarServer\admin\views.py", line 226, in send_admission
+    success_ids.append(i['token'])
+KeyError: 'token'
+2018-09-28 20:48:36,420 INFO: one_assignment
+2018-09-28 20:48:36,421 INFO: list_num -> 1
+2018-09-28 20:48:36,436 INFO: apply_role_update
+2018-09-29 00:01:13,254 INFO: insert_goods
+2018-09-29 00:01:13,255 INFO: request body -> {'location': 'a', 'shop': 'A01', 'name': '건영', 'price': '5000000', 'quantity': '1', 'category': '[1,11]'}
+2018-09-29 00:01:13,256 INFO: image_uploaded -> c.jpg
+2018-09-29 00:01:13,256 INFO: image_path -> static/bazaar_img/a/2018-9-29-0-1-13c.jpg
+2018-09-29 00:16:39,181 WARNING: Not Found: /favicon.ico

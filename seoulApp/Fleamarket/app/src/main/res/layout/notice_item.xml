@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="notice"
+            type="com.example.skuniv.fleamarket2.viewModel.noticeViewModel.NoticeItemViewModel"/>
+
+        <variable
+            name="files"
+            type="com.example.skuniv.fleamarket2.viewModel.noticeViewModel.NoticeFilesViewModel"/>
+
+    </data>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="no"
+            android:background="@drawable/border"
+            android:textSize="20sp"
+            android:textColor="#3E2723"
+            android:gravity="center"
+            android:layout_weight="3"/>
+
+        <TextView
+            android:id="@+id/noId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:background="@drawable/border"
+            android:textColor="#3E2723"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="@{Integer.toString(notice.no.get())}"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:background="@drawable/border"
+            android:textSize="20sp"
+            android:textColor="#3E2723"
+            android:text="title"/>
+
+        <TextView
+            android:id="@+id/titleId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:textSize="20sp"
+            android:textColor="#3E2723"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="@{notice.title.get()}"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:textSize="20sp"
+            android:textColor="#3E2723"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:text="date"/>
+
+        <TextView
+            android:id="@+id/dateId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:background="@drawable/border"
+            android:textColor="#3E2723"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="@{notice.date.get()}"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="6">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:textSize="20sp"
+            android:textColor="#3E2723"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:text="contents"/>
+
+
+        <TextView
+            android:id="@+id/contentId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:background="@drawable/border"
+            android:textColor="#3E2723"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="@{notice.contents.get()}"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:textSize="20sp"
+            android:background="@drawable/border"
+            android:textColor="#3E2723"
+            android:gravity="center"
+            android:text="files"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerId4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:layout_weight="1"
+            android:gravity="center"
+            app:items="@{files.fileList}">
+
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+</LinearLayout>
+</layout>

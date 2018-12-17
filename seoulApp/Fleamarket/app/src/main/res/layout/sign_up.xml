@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/idText"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="ID"/>
+
+    <EditText
+        android:id="@+id/pwText"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:inputType="textPassword"
+        android:hint="password"/>
+
+    <EditText
+        android:id="@+id/nameText"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="name"/>
+
+        <RadioGroup
+            android:id="@+id/sexRadio"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="30dp"
+                android:focusedByDefault="true"
+                android:value="male"
+                android:text="남" />
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:value="femail"
+                android:text="여"/>
+        </RadioGroup>
+
+    <EditText
+        android:id="@+id/emailText"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="e-mail"/>
+
+    <Button
+        android:id="@+id/signUpBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#B2EBF2"
+        android:textSize="20sp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="회원가입"/>
+
+</LinearLayout>
+</layout>

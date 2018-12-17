@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="shop"
+            type="com.example.skuniv.fleamarket2.viewModel.categoryViewmodel.CategoryShopViewModel"/>
+
+        <variable
+            name="command"
+            type="com.example.skuniv.fleamarket2.viewModel.categoryViewmodel.CategoryCommand"/>
+
+    </data>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="5dp">
+
+    <ImageView
+        android:id="@+id/imageId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:text="상품 위치 :"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:text="마켓 이름 :"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:text="@{shop.location}"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="20dp"
+        android:layout_weight="1"
+        android:textColor="#000000"
+        android:text="@{shop.shop}"/>
+    </LinearLayout>
+</LinearLayout>
+</layout>

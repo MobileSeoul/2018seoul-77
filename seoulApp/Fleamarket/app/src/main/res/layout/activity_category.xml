@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="category"
+            type="com.example.skuniv.fleamarket2.view.categoryView.CategoryActivity"/>
+    </data>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.categoryView.CategoryActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        >
+
+        <Button
+            android:id="@+id/clothId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFCCBC"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:text="옷"
+            android:onClick="@{() -> category.categoryClickListener(&quot;CLOTH&quot;)}"/>
+
+        <Button
+            android:id="@+id/digitalId"
+            android:background="#D1C4E9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:text="디지털"
+            android:onClick="@{() -> category.categoryClickListener(&quot;DIGITAL&quot;)}"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/fancyId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="잡화"
+            android:background="#BBDEFB"
+            android:textSize="30sp"
+            android:textColor="#ffffff"
+            android:onClick="@{() -> category.categoryClickListener(&quot;FANCY&quot;)}"/>
+
+        <Button
+            android:id="@+id/accId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFECB3"
+            android:textSize="30sp"
+            android:textColor="#ffffff"
+            android:text="악세서리"
+            android:onClick="@{() -> category.categoryClickListener(&quot;ACC&quot;)}"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/bookId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#DCEDC8"
+            android:textSize="30sp"
+            android:textColor="#ffffff"
+            android:text="도서"
+            android:onClick="@{() -> category.categoryClickListener(&quot;BOOK&quot;)}"/>
+
+        <Button
+            android:id="@+id/etcId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#F8BBD0"
+            android:textSize="30sp"
+            android:textColor="#ffffff"
+            android:text="기타"
+            android:onClick="@{() -> category.categoryClickListener(&quot;ETC&quot;)}"/>
+    </LinearLayout>
+
+</LinearLayout>
+</layout>

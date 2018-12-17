@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="noticeList"
+            type="com.example.skuniv.fleamarket2.viewModel.noticeViewModel.NoticeItemsViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45sp"
+            android:background="#546E7A"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="no"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="title"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="date"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerId3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:items="@{noticeList.noticeList}">
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinnerId"
+                android:layout_width="match_parent"
+                android:layout_weight="1.7"
+                android:layout_height="match_parent"
+                android:entries="@array/noticeType" />
+
+            <EditText
+                android:id="@+id/searchTextId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:background="#ffffff"
+                android:hint="search" />
+
+            <ImageButton
+                android:id="@+id/searchBtnId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/search"
+                android:layout_weight="2.5"
+                android:textColor="#ffffff"
+                android:textSize="17sp"
+                android:text="search" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

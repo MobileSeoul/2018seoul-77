@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/nameId"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="name"/>
+
+        <EditText
+            android:id="@+id/emailId"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="e-mail"/>
+
+        <Button
+            android:id="@+id/findBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF9C4"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"
+            android:text="아이디 찾기"/>
+
+        <TextView
+            android:id="@+id/findText"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+</layout>
